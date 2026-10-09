@@ -119,7 +119,7 @@ function Contact() {
               </span>
               <span className="contact-detail-text">
                 <small>Based in</small>
-                <b>Punjab, India · IST (UTC+5:30)</b>
+                <b>Punjab, India · Open to remote & hybrid</b>
               </span>
             </span>
           </div>
