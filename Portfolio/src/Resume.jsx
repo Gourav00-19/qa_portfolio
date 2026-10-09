@@ -4,7 +4,7 @@ function Resume() {
   return (
     <>
       <a className="skip-link" href="#resume">Skip to resume</a>
-      <header className="site-header resume-header" id="top">
+      <header className="site-header resume-header">
         <nav className="nav shell" aria-label="Resume navigation">
           <a className="brand" href="index.html" aria-label="Return to portfolio">
             <span className="brand-mark">G<span /></span>
@@ -22,7 +22,10 @@ function Resume() {
         </div>
         <section className="resume-hero">
           <div>
-            <h1>Gourav</h1>
+            <div className="resume-name-row">
+              <h1>Gourav</h1>
+              <div className="resume-badge" aria-hidden="true">G</div>
+            </div>
             <p>
               Quality Analyst · Sabour, Rupnagar, Punjab, India ·{" "}
               <a href="mailto:gk831016@gmail.com">gk831016@gmail.com</a> ·{" "}
@@ -32,7 +35,6 @@ function Resume() {
               </a>
             </p>
           </div>
-          <div className="resume-badge" aria-hidden="true">G</div>
         </section>
         <section className="resume-block">
           <h2>PROFESSIONAL SUMMARY</h2>
@@ -128,10 +130,9 @@ function Resume() {
         </section>
         <div className="resume-footer">
           <a href="index.html">← Return to portfolio</a>
-          <span className="print-hint">Download a PDF copy of this resume.</span>
         </div>
       </main>
-      <SiteFooter homeHref="#top" />
+      <SiteFooter homeHref="index.html#home" backTopHref="#resume" />
     </>
   );
 }

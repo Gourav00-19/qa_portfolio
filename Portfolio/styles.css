@@ -1504,6 +1504,13 @@ h1, h2 {
   margin: 0;
   font-size: clamp(34px,5vw,48px)
 }
+.resume-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 16px;
+}
 .resume-hero>div>p:last-child {
   margin: 7px 0 0;
   color: var(--muted);
@@ -1943,6 +1950,13 @@ h1, h2 {
   .shell {
     width: min(100% - 36px, 640px);
 }
+  .process-number {
+    align-self: center;
+    padding-top: 0;
+}
+  .process-symbol {
+    align-self: center;
+}
   .nav-links {
     gap: 12px;
 }
@@ -2155,8 +2169,12 @@ h1, h2 {
   .hero-actions .button {
     justify-content: space-between;
 }
+.hero-actions .text-link {
+  display: inline-flex;
+  align-items: center;
+}
   .hero-note {
-    align-items: flex-start;
+    align-items: center;
     gap: 9px;
     margin-top: 30px;
 }
@@ -2281,6 +2299,9 @@ h1, h2 {
 }
   .hero-actions {
     flex-direction: column;
+}
+.hero-actions .text-link {
+  align-self: center;
 }
   .stats-row {
     column-gap: 8px;
