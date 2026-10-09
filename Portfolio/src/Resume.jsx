@@ -4,7 +4,7 @@ function Resume() {
   return (
     <>
       <a className="skip-link" href="#resume">Skip to resume</a>
-      <header className="site-header resume-header">
+      <header className="site-header resume-header" id="top">
         <nav className="nav shell" aria-label="Resume navigation">
           <a className="brand" href="index.html" aria-label="Return to portfolio">
             <span className="brand-mark">G<span /></span>
@@ -131,7 +131,7 @@ function Resume() {
           <span className="print-hint">Download a PDF copy of this resume.</span>
         </div>
       </main>
-      <SiteFooter homeHref="index.html#home" />
+      <SiteFooter homeHref="#top" />
     </>
   );
 }

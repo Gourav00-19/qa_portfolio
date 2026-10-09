@@ -1,4 +1,4 @@
-function SiteFooter({ homeHref = "#home" }) {
+function SiteFooter({ homeHref = "#home", backTopHref = homeHref }) {
   return (
     <footer className="site-footer">
       <div className="shell footer-inner">
@@ -7,7 +7,7 @@ function SiteFooter({ homeHref = "#home" }) {
           <span className="brand-name">GOURAV<span>/QA</span></span>
         </a>
         <p>Thoughtful testing. Better software.</p>
-        <a className="back-top mono" href={homeHref}>BACK TO TOP ↑</a>
+        <a className="back-top mono" href={backTopHref}>BACK TO TOP ↑</a>
         <small>© {new Date().getFullYear()} GOURAV. QA PORTFOLIO.</small>
       </div>
     </footer>
